@@ -9,6 +9,13 @@ for your terminal and on the go.
 brew install nuudge/tap/nudge
 ```
 
+Recent Homebrew versions refuse third-party taps until trusted — if you see
+"untrusted tap", run `brew trust nuudge/tap` and install again.
+
+Always use the full `nuudge/tap/nudge` name: a bare `brew install nudge`
+resolves to an unrelated cask (macadmins' Nudge). Upgrade with
+`brew upgrade nuudge/tap/nudge`.
+
 The formula installs prebuilt release binaries (Apple Silicon macOS and x86_64
 Linux) — no source build.
 
