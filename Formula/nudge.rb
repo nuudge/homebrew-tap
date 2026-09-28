@@ -1,20 +1,20 @@
 class Nudge < Formula
   desc "A coding agent for your terminal and on the go"
   homepage "https://github.com/nuudge/nudge"
-  version "0.1.5"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/nuudge/nudge/releases/download/v0.1.5/nudge-aarch64-apple-darwin"
-      sha256 "91c08e08e1ccee3825820fc1877fe65eba47c4fc920e603e667a730b0c7ae664"
+      url "https://github.com/nuudge/nudge/releases/download/v0.2.0/nudge-aarch64-apple-darwin"
+      sha256 "82ef193c51935d9cead965eecaa08cde76ef37e88ebb0c9bd827f5bb2fc812eb"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/nuudge/nudge/releases/download/v0.1.5/nudge-x86_64-unknown-linux-gnu"
-      sha256 "338d054b3300460cedfcc22ac3cf478149910676b41f7473fdc5fff3d14177ba"
+      url "https://github.com/nuudge/nudge/releases/download/v0.2.0/nudge-x86_64-unknown-linux-gnu"
+      sha256 "22a3ae41fa46c9e528a39dbe8e2d84bfecb7afe1315f8b3aa0131fa8069fb4b8"
     end
   end
 
@@ -30,6 +30,6 @@ class Nudge < Formula
   end
 
   test do
-    assert_match "0.1.5", shell_output("#{bin}/nudge --version")
+    assert_match "0.2.0", shell_output("#{bin}/nudge --version")
   end
 end
